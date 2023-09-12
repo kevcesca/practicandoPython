@@ -1,0 +1,14 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+
+    <main class="container-fluid bg-primary" >
+        <form action="{% url 'Buscar' %}" method="get"> 
+
+            <p>Camada: <input type="text" name="camada"></p>
+            
+            <button type="submit" class="button">Enviar</button>
+        </form>
+    </main>
+
+{% endblock contenidoQueCambia %}
